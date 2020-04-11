@@ -1,6 +1,6 @@
 <img align="right" src="https://raw.github.com/cliffano/jenkins-workspace/master/avatar.jpg" alt="Avatar"/>
 
-[![Build Status](https://github.com/cliffano/aem-workspace/workflows/CI/badge.svg)](https://github.com/cliffano/aem-workspace/actions?query=workflow%3ACI)
+[![Build Status](https://github.com/cliffano/jenkins-workspace/workflows/CI/badge.svg)](https://github.com/cliffano/jenkins-workspace/actions?query=workflow%3ACI)
 <br/>
 
 Jenkins Workspace
