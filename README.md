@@ -6,10 +6,9 @@
 Jenkins Workspace
 -------------
 
-Jenkins Workspace is a simple workspace area for running multiple versions of [Jenkins](https://jenkins.io).
-It provides convenient build targets to start Jenkins and reset its workspace.
+Jenkins Workspace is a simple workspace area for running multiple versions of [Jenkins](https://jenkins.io), providing convenient build targets to start Jenkins and reset its workspace.
 
-Note that only LTS versions are supported.
+Note that only LTS versions starting from 2.222.1 will be supported.
 
 Install
 -------
