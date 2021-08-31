@@ -1,4 +1,4 @@
-ci: 2.222.1-download 2.222.1-init 2.222.1-clean
+ci: 2.303.1-download 2.303.1-init 2.303.1-clean
 
 clean:
 	rm -rf workspaces/
@@ -27,16 +27,16 @@ define jenkins_clean
   rm -rf workspaces/$(1)/jenkins-home/
 endef
 
-2.222.1-download:
-	$(call jenkins_download,2.222.1)
+2.303.1-download:
+	$(call jenkins_download,2.303.1)
 
-2.222.1-init:
-	$(call jenkins_init,2.222.1)
+2.303.1-init:
+	$(call jenkins_init,2.303.1)
 
-2.222.1-start:
-	$(call jenkins_start,2.222.1)
+2.303.1-start:
+	$(call jenkins_start,2.303.1)
 
-2.222.1-clean:
-	$(call jenkins_clean,2.222.1)
+2.303.1-clean:
+	$(call jenkins_clean,2.303.1)
 
-.PHONY: ci clean 2.222.1-download 2.222.1-init 2.222.1-start 2.222.1-clean
+.PHONY: ci clean 2.303.1-download 2.303.1-init 2.303.1-start 2.303.1-clean

@@ -8,7 +8,7 @@ Jenkins Workspace
 
 Jenkins Workspace is a simple workspace area for running multiple versions of [Jenkins](https://jenkins.io), providing convenient build targets to start Jenkins and reset its workspace.
 
-Note that only LTS versions starting from 2.222.1 will be supported.
+Note that only LTS versions starting from 2.303.1 will be supported.
 
 Install
 -------
@@ -24,22 +24,22 @@ All build targets have the format:
 
     make <version>-<download|start|clean>
 
-Download Jenkins 2.222.1 war file:
+Download Jenkins 2.303.1 war file:
 
-    make 2.222.1-download
+    make 2.303.1-download
 
 Start Jenkins:
 
-    make 2.222.1-start
+    make 2.303.1-start
 
 Each Jenkins version is allocated the following port numbers:
 
 | Version | HTTP Port |
 |---------|-----------|
-| 2.222.1 | 22221     |
+| 2.303.1 | 23031     |
 
 First start will take a while due to Jenkins initialising Jenkins Home workspace.
 
-And clean up Jenkins 2.222.1 workspace:
+And clean up Jenkins 2.303.1 workspace:
 
-    make 2.222.1-clean
+    make 2.303.1-clean
