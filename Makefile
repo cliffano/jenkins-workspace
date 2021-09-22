@@ -48,4 +48,6 @@ endef
 2.303.1-clean:
 	$(call jenkins_clean,2.303.1)
 
-.PHONY: ci clean 2.303.1-download 2.303.1-init 2.303.1-start 2.303.1-start-sans-home 2.303.1-clean
+jenkins-start-sans-home: 2.303.1-start-sans-home 
+
+.PHONY: ci clean jenkins-start-sans-home 2.303.1-download 2.303.1-init 2.303.1-start 2.303.1-start-sans-home 2.303.1-clean
