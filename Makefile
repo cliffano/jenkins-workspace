@@ -7,6 +7,7 @@ define jenkins_download
   mkdir -p \
 	  artifacts/$(1)/
   curl \
+      -L \
 	  -o artifacts/$(1)/jenkins.war \
 	  http://mirrors.jenkins.io/war-stable/$(1)/jenkins.war
 endef
