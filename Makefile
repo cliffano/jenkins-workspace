@@ -6,9 +6,9 @@ clean:
 define jenkins_download
   mkdir -p \
 	  artifacts/$(1)/
-  wget \
-	  -O artifacts/$(1)/jenkins.war \
-		http://mirrors.jenkins.io/war-stable/$(1)/jenkins.war
+  curl \
+	  -o artifacts/$(1)/jenkins.war \
+	  http://mirrors.jenkins.io/war-stable/$(1)/jenkins.war
 endef
 
 define jenkins_init
