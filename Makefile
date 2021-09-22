@@ -23,6 +23,12 @@ define jenkins_start
 		--httpPort=`echo $(1) | tr -d .`
 endef
 
+define jenkins_start_sans_home
+  java \
+	  -jar artifacts/$(1)/jenkins.war \
+	  --httpPort=`echo $(1) | tr -d .`
+endef
+
 define jenkins_clean
   rm -rf workspaces/$(1)/jenkins-home/
 endef
@@ -36,7 +42,10 @@ endef
 2.303.1-start:
 	$(call jenkins_start,2.303.1)
 
+2.303.1-start-sans-home:
+	$(call jenkins_start_sans_home,2.303.1)
+
 2.303.1-clean:
 	$(call jenkins_clean,2.303.1)
 
-.PHONY: ci clean 2.303.1-download 2.303.1-init 2.303.1-start 2.303.1-clean
+.PHONY: ci clean 2.303.1-download 2.303.1-init 2.303.1-start 2.303.1-start-sans-home 2.303.1-clean
