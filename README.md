@@ -37,6 +37,7 @@ Each Jenkins version is allocated the following port numbers:
 | Version | HTTP Port |
 |---------|-----------|
 | 2.303.1 | 23031     |
+| sans-home | 8080 |
 
 First start will take a while due to Jenkins initialising Jenkins Home workspace.
 

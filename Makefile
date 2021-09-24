@@ -27,7 +27,7 @@ endef
 define jenkins_start_sans_home
   java \
 	  -jar artifacts/$(1)/jenkins.war \
-	  --httpPort=`echo $(1) | tr -d .`
+	  --httpPort=8080
 endef
 
 define jenkins_clean
